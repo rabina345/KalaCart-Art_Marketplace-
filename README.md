@@ -1,16 +1,54 @@
-# React + Vite
+# KalaCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Discover Art. Own What You Love.**
 
-Currently, two official plugins are available:
+KalaCart is a marketplace for handmade art from Nepal. Artists list drawings, paintings, crochet and sculptures, and buyers can browse, save favorites, and send purchase requests. One account can both buy and sell.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live site:** 
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Sign up and login with email and password
+- One account works as both buyer and artist
+- Upload artworks with photos, price and category
+- Gallery with search, category filters, sorting and an "available only" option
+- Artwork pages with inquiry form and WhatsApp contact
+- Public artist profiles with photo, bio and their artworks
+- My Shop: artists accept, decline and mark requests as sold
+- My Orders: buyers track their requests
+- Notification badges for new requests and order updates
+- Favorites list
+- Edit and delete your own artworks
+- Responsive design for phones and desktop
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Frontend:** React, Vite, React Router
+- **Backend:** Supabase (PostgreSQL, Auth, Storage)
+- **Security:** Row Level Security policies, so users can only change their own data
+- **Hosting:** Vercel
+
+## What I learned
+
+- Designing a relational database (profiles, artworks, orders, favorites)
+- Writing Row Level Security rules and database constraints
+- Building reusable React hooks (`useNotifications`, `useFavorites`)
+- Handling image uploads with Supabase Storage
+- Form validation on both the client and the database
+
+## Run it locally
+
+1. Clone the repository
+2. Run `npm install`
+3. Create a `.env` file with:
+4. Run `npm run dev`
+
+## Planned features
+
+- Multiple photos per artwork
+- Reviews and ratings
+- Built-in chat
+
+## Author
+
+[Rabina Sijakhwa] · [Sijakhworabina@gmail.com]
